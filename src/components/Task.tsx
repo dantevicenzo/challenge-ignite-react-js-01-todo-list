@@ -37,7 +37,9 @@ export default function Task({task, onDeleteTask, onCheckboxChange} : ITaskProps
             onChange={handleCheckboxChange}
             />
             <label htmlFor={`task${task.id}`}></label>
-            <p>{task.content}</p>
+            <p onClick={handleCheckboxChange}>
+                {task.content}
+            </p>
             <button 
             className={styles.trash}
             onClick={handleDeleteTask}
