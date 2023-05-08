@@ -1,6 +1,7 @@
 import { PlusCircle } from "@phosphor-icons/react";
 import logo from './assets/todo-logo.svg'
 import clipboard from './assets/clipboard.png'
+import Input from "./components/Input";
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
       </header>
       <main>
         <div>
-          <input type="text" placeholder='Adicione uma nova tarefa' />
+          <Input />
           <button>Criar <PlusCircle size={16} /></button>
         </div>
         <div>
