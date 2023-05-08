@@ -1,10 +1,35 @@
+import { PlusCircle } from "@phosphor-icons/react";
+import logo from './assets/todo-logo.svg'
+import clipboard from './assets/clipboard.png'
 
 function App() {
 
   return (
     <>
-      <h1>To do List</h1>
-      
+      <header>
+        <img src={logo} />
+      </header>
+      <main>
+        <div>
+          <input type="text" placeholder='Adicione uma nova tarefa' />
+          <button>Criar <PlusCircle size={16} /></button>
+        </div>
+        <div>
+          <div>
+            <div>
+              <span>Tarefas criadas</span><span>0</span>
+            </div>
+            <div>
+              <span>Concluídas</span><span>0</span>
+            </div>
+          </div>
+          <div>
+            <img src={clipboard} />
+            <p><strong>Você ainda não tem tarefas cadastradas</strong></p>
+            <p>Crie tarefas e organize seus itens a fazer</p>
+          </div>
+        </div>
+      </main>
     </>
   )
 }
