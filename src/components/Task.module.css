@@ -33,7 +33,7 @@
 .task > label {
     display: inline-block;
     position: relative;
-    padding-left: 28px; /* adjust this value based on the size of the checkbox */
+    padding-left: 1.563rem; /* adjust this value based on the size of the checkbox */
     cursor: pointer;
 }
   
@@ -43,11 +43,11 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 1rem; /* adjust this value based on the size of the checkbox */
-    height: 1rem; /* adjust this value based on the size of the checkbox */
+    width: 0.875rem; /* adjust this value based on the size of the checkbox */
+    height: 0.875rem; /* adjust this value based on the size of the checkbox */
     border: 1px solid var(--blue);
     border-radius: 50%;
-    margin: 0.3rem;
+    margin: 0.25rem;
 }
 
 .task > label:hover:before {
@@ -67,10 +67,10 @@
     content: '';
     display: block;
     position: absolute;
-    left: 7px; /* adjust this value based on the size of the checkbox */
-    top: 4px; /* adjust this value based on the size of the checkbox */
-    width: 2px; /* adjust this value based on the size of the checkbox */
-    height: 6px; /* adjust this value based on the size of the checkbox */
+    left: 0.344rem; /* adjust this value based on the size of the checkbox */
+    top: 0.188rem; /* adjust this value based on the size of the checkbox */
+    width: 0.125rem; /* adjust this value based on the size of the checkbox */
+    height: 0.313rem; /* adjust this value based on the size of the checkbox */
     border: solid white;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);

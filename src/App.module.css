@@ -61,6 +61,15 @@ main {
 
 @media (max-width: 425px) {
     html {
-        font-size: 69%;
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 300px) {
+    .formNewTask {
+        flex-direction: column;
+    }
+    .formNewTask > button {
+        justify-content: center;
     }
 }
