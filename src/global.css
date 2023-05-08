@@ -13,7 +13,18 @@
     --danger: #E25858;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gray-600);
+}
+
 body, input, select, textarea {
     font-family: 'Inter', sans-serif;
     line-height: 1.4;
+    color: var(--gray-100);
 }
