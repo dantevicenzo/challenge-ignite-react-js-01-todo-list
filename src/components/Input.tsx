@@ -1,8 +1,19 @@
-import React from 'react'
+import { ChangeEvent } from 'react'
 import styles from './Input.module.css'
 
-export default function Input(){
+interface IInputProps {
+    placeholder: string,
+    onChange: (event: ChangeEvent<HTMLInputElement>) => void,
+}
+
+export default function Input({placeholder, onChange} : IInputProps){
     return (
-        <input className={styles.input} type="text" placeholder='Adicione uma nova tarefa' />
+        <input 
+        className={styles.input} 
+        type="text" 
+        placeholder={placeholder} 
+        onChange={onChange}
+        required
+        />
     )
 }

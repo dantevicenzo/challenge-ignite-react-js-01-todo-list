@@ -1,4 +1,5 @@
 .task {
+    width: 100%;
     background-color: var(--gray-500);
     padding: 1rem;
     border-radius: 8px;
@@ -9,8 +10,11 @@
 }
 
 .task > p {
+    max-width: 88%;
     font-size: 0.875rem;
     flex: 1;
+    word-wrap:break-word;
+    white-space: pre-wrap;
 }
 
 .task > input[type="checkbox"]:checked + label + p {
