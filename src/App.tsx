@@ -11,8 +11,8 @@ import { PlusCircle } from '@phosphor-icons/react';
 
 export default function App() {
 
-  const [tasksList, setTasksList] = useState(Array<ITask>);
   const [task, setTask] = useState('');
+  const [tasksList, setTasksList] = useState(Array<ITask>);
   const [completedTasks, setCompletedTasks] = useState(0);
 
   useEffect(() => {
@@ -32,6 +32,7 @@ export default function App() {
     }
 
     setTasksList([...tasksList, newTask]);
+    setTask('');
   }
 
   function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>){
@@ -60,6 +61,7 @@ export default function App() {
           <Input 
             onChange={handleNewTaskChange}
             placeholder='Adicione uma nova tarefa'
+            value={task}
           />
           <Button 
             text='Criar' 
