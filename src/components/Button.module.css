@@ -8,6 +8,7 @@
     border: none;
     padding: 1rem;
     transition: background-color 0.15s;
+    gap: 0.5rem;
 }
 
 .button:hover {

@@ -4,35 +4,37 @@ import clipboard from './assets/clipboard.png'
 import Input from "./components/Input";
 import Button from "./components/Button";
 
+import styles from './App.module.css';
+
 function App() {
 
   return (
-    <>
-      <header>
+    <div className={styles.wrapper}>
+      <header className={styles.header}>
         <img src={logo} />
       </header>
       <main>
-        <div>
+        <form className={styles.formNewTask}>
           <Input />
           <Button />
-        </div>
+        </form>
         <div>
-          <div>
+          <div className={styles.infoWrapper}>
             <div>
-              <span>Tarefas criadas</span><span>0</span>
+              <span className={styles.created}>Tarefas criadas</span><span className={styles.counter}>0</span>
             </div>
             <div>
-              <span>Concluídas</span><span>0</span>
+              <span className={styles.completed}>Concluídas</span><span className={styles.counter}>0</span>
             </div>
           </div>
-          <div>
+          <div className={styles.empty}>
             <img src={clipboard} />
             <p><strong>Você ainda não tem tarefas cadastradas</strong></p>
             <p>Crie tarefas e organize seus itens a fazer</p>
           </div>
         </div>
       </main>
-    </>
+    </div>
   )
 }
 
