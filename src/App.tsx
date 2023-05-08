@@ -1,8 +1,8 @@
-import { PlusCircle } from "@phosphor-icons/react";
 import logo from './assets/todo-logo.svg'
-import clipboard from './assets/clipboard.png'
+
 import Input from "./components/Input";
 import Button from "./components/Button";
+import Empty from "./components/Empty";
 
 import styles from './App.module.css';
 
@@ -27,11 +27,7 @@ function App() {
               <span className={styles.completed}>Concluídas</span><span className={styles.counter}>0</span>
             </div>
           </div>
-          <div className={styles.empty}>
-            <img src={clipboard} />
-            <p><strong>Você ainda não tem tarefas cadastradas</strong></p>
-            <p>Crie tarefas e organize seus itens a fazer</p>
-          </div>
+          <Empty />
         </div>
       </main>
     </div>
