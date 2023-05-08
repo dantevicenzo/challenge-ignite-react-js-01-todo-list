@@ -21,6 +21,7 @@
 
 body {
     background-color: var(--gray-600);
+    user-select: none;
 }
 
 body, input, select, textarea {
